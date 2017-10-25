@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="311-i0-wlF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upload Pictures-->
+        <scene sceneID="izb-In-Rdy">
+            <objects>
+                <viewController id="bLd-pX-hEw" customClass="UploadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8wm-QR-d4Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="pi5-y7-Ro9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZRx-0b-1H4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Lt-16-pVM">
+                                <rect key="frame" x="90" y="206" width="228" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.14901960780000001" green="0.1764705882" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <progressView opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tvr-Dz-a30">
+                                <rect key="frame" x="90" y="282" width="228" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <progressView opaque="NO" tag="2" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-yq-arF">
+                                <rect key="frame" x="90" y="332" width="228" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <progressView opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c95-Ya-iIv">
+                                <rect key="frame" x="90" y="412" width="228" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Upload Pictures" id="OK8-Jf-PGZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="QEk-eb-K7Z">
+                            <connections>
+                                <action selector="showAlertController:" destination="bLd-pX-hEw" id="3Ou-F3-jI5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="progressView" destination="1Lt-16-pVM" id="ohO-Rn-XAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vzg-eM-BeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="304"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZhC-UH-QlZ">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="311-i0-wlF" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Nfn-Fq-eS2">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ayk-RP-w7T" kind="relationship" relationship="viewControllers" id="wcF-0y-k75"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAq-eS-Src" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.125" y="304.22535211267603"/>
+        </scene>
+        <!--Upload-->
+        <scene sceneID="YUd-2z-feY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ayk-RP-w7T" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Upload" image="first" id="eIb-kQ-lSr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="9X8-Pz-s5Y">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="86j-Bd-gVt">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="bLd-pX-hEw" kind="relationship" relationship="rootViewController" id="ny5-R4-aet"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t8h-va-avH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="304"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>

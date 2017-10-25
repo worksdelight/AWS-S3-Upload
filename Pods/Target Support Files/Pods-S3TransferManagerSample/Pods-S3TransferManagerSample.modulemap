@@ -1,0 +1,6 @@
+framework module Pods_S3TransferManagerSample {
+  umbrella header "Pods-S3TransferManagerSample-umbrella.h"
+
+  export *
+  module * { export * }
+}
