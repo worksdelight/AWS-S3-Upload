@@ -30,15 +30,13 @@ This sample demonstrates the Amazon S3 TransferManager found in the AWS Mobile S
 
 1. Open `Constants.m` and update the following line with the appropriate constant:
 
-        NSString *const S3BucketName = @"YourS3BucketName";
-
-1. Open `Info.plist` and update the following lines with the appropriate constants:
-
-    AWS --> CredentialsProvider --> CognitoIdentity --> Default --> Region      // eg. USEast1
-    AWS --> CredentialsProvider --> CognitoIdentity --> Default --> PoolId
-    AWS --> Cognito --> Default --> Region                                      // eg. USEast1
-    AWS --> S3TransferManager --> Default --> Region                            // eg. USEast1
-    AWS --> S3TransferUtility --> Default --> Region                            // eg. USEast1
+NSString *const S3_Accesskey = @"";
+NSString *const S3_Secret = @"";
 
 
-1. Build and run the sample app.
+
+1. Build and run the app.
+
+The progress bar shows the progress of each upload
+there are methods to download image as well.
+

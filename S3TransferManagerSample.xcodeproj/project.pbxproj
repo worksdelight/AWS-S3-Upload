@@ -385,7 +385,7 @@
 				GCC_PREFIX_HEADER = "S3TransferManagerSample/S3TransferManagerSample-Prefix.pch";
 				INFOPLIST_FILE = "S3TransferManagerSample/S3TransferManagerSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amazonaws.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wd.amazonawss3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -405,7 +405,7 @@
 				GCC_PREFIX_HEADER = "S3TransferManagerSample/S3TransferManagerSample-Prefix.pch";
 				INFOPLIST_FILE = "S3TransferManagerSample/S3TransferManagerSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amazonaws.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wd.amazonawss3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

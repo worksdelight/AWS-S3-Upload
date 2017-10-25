@@ -1,5 +1,6 @@
 /*
  * Copyright 2017 worksdelight or its affiliates. All Rights Reserved.
+ * Visit https://www.worksdelight.com
  */
 
 #import "AppDelegate.h"

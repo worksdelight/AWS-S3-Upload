@@ -1,5 +1,6 @@
 /*
  * Copyright 2017 worksdelight or its affiliates. All Rights Reserved.
+ * Visit https://www.worksdelight.com
  */
 
 #import "UploadViewController.h"
@@ -65,7 +66,7 @@
 
     
 }
-
+// This method reads and shows progress in a progress view
 - (void)showprogress:(AWSS3TransferManagerUploadRequest*)uploadRequest
 {
     int progressTag = [uploadRequest.metadata[@"tag"] intValue];
